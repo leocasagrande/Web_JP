@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+</head>
+<body>
+    <h1>App html</h1>
+    
+    <form action="/dados" method="post">
+        <h5>Nome:</h5>
+        <input type="text" id="nome" name="nome">
+        <h5>CPF:</h5>
+        <input type="text" id="cpf" name="cpf">
+        <h5>Data de Nascimento:</h5>
+        <input type="date" id="dta" name="dta">
+        <h5>Telefone:</h5>
+        <input type="text" id="telefone" name="telefone">
+        <h5>Endereço:</h5>
+        <input type="text" id="endereco" name="endereco">
+        <h5>CEP:</h5>
+        <input type="text" id="cep" name="cep">
+        <h5>Email:</h5>
+        <input type="text" id="email" name="email">
+        <h5>Especialidade:</h5>
+        <select name="especialidade" id="especialidade">
+            <option value="Nulo"></option>
+            <option value="Clinica">Clínica Médica</option>
+            <option value="Pediatria">Pediatria</option>
+            <option value="Cirurgia">Cirurgia Geral</option>
+            <option value="Ginecologia">Ginecologia</option>
+            <option value="Cardiologia">Cardiologia</option>
+            <option value="Oftalmologia">Oftalmologia</option>
+            <option value="Radiologia">Radiologia</option>
+        </select>
+        <h5>Alergias:</h5>
+        <select name="alergia" id="alergia">
+            <option value="Nulo"></option>
+            <option value="amendoim">Amendoim</option>
+            <option value="gluten">Gluten</option>
+            <option value="frutos">Frutos do mar</option>
+            <option value="corantes">Corantes</option>
+            <option value="medicamentos">Medicamentos</option>
+        </select>
+        <h5>Informações Adicionais:</h5>
+        <textarea name="infos" id="infos" cols="100" rows="15"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <p style="color: red;">{{error}}</p>
+</body>
+</html>
